@@ -1,4 +1,5 @@
 # ExifDateFixer-Android
+
 An Android app that runs [exiftool](https://exiftool.org/) using a cross-compiled version of Perl for Android. This can be used to run exiftool in batch on images or directories directly on your phone.
 
 The primary motivation for this was that on my Google Pixel 2 XL, screenshots and images saved from Snapchat don't come with EXIF timestamps embedded in them. The Google Photos app on Android only looks for an EXIF timestamp to determine the time the image was taken, and uses the time of upload as a fallback, ignoring the file creation/modification timestamp.
@@ -6,6 +7,12 @@ The primary motivation for this was that on my Google Pixel 2 XL, screenshots an
 With this app, I can select all my screenshots and Snapchat images, and embed EXIF timestamps in them based on either their filenames (Android screenshots store the timestamp in the filename) or file modification date (used for Snapchat images). This way Google Photos can pick up the time the images were actually taken and my memories can be preserved. There is also an option to use custom flags for exiftool in case the default options I've provided don't suffice.
 
 <img src="screenshot.png" alt="Screenshot" width="500" />
+
+# TODO
+
+- [] Review and rename all photos. Include options to read from modified time of pictures. A nice view of before/after would be neat
+- [] View that shows all pictures that lacks geodata. That was one could know that actions is needed
+
 
 ## Usage
 
